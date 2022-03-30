@@ -1,0 +1,94 @@
+{% extends "app/base.html" %}
+{% load static %} 
+
+{% block contenido %}
+
+
+<div class="homepage-next-events">
+    <div class="container">
+        <div class="row">
+            <div class="next-events-section-header">
+                <h2 class="entry-title">Empleos - más solicitados</h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="next-event-wrap">
+                    <figure>
+                        <a href="#"><img src="{% static 'images/ventas.png' %}" alt="1"></a>
+
+                        <div class="event-rating">16,606</div>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h3 class="entry-title">Vacantes -Ventas</h3>
+
+                        <div class="posted-date">Jueves <span>Febrero 10, 2022</span></div>
+                    </header>
+
+                    <div class="entry-content">
+                        <p>El trabajo de ventas consiste en ganarse el interés de clientes potenciales y luego convertirlos en clientes reales. Los vendedores son necesarios en casi los oficios y sectores, además tienen la oportunidad de ganar salarios altos.</p>
+                    </div>
+
+                    <footer class="entry-footer">
+                        <a href="#">Màs informaciòn</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="next-event-wrap">
+                    <figure>
+                        <a href="#"><img src="{% static 'images/contabilidad.png' %}" alt="1"></a>
+
+                        <div class="event-rating">6,916</div>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h3 class="entry-title">Vacante -Contabilidad-Finanzas</h3>
+
+                        <div class="posted-date">Jueves <span>Febrero 10, 2022</span></div>
+                    </header>
+
+                    <div class="entry-content">
+                        <p>Se dedica al estudio de la obtención de capital para la inversión en bienes productivos y de las decisiones de inversión de los ahorradores.</p>
+                    </div>
+
+                    <footer class="entry-footer">
+                        <a href="#">Màs Informaciòn</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="next-event-wrap">
+                    <figure>
+                        <a href="#"><img src="{% static 'images/tecnologia.png' %}" alt="1"></a>
+
+                        <div class="event-rating">9, 459</div>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h3 class="entry-title">Vacante -Tecnologìas de la Informaciòn-Sistemas</h3>
+
+                        <div class="posted-date">Jueves <span>Febrero 10, 2022</span></div>
+                    </header>
+
+                    <div class="entry-content">
+                        <p>comprende el proceso de producir de manera efectiva un software o sistema que sea funcional tras cumplir con un conjunto de requisitos, por lo cual el objetivo principal de los profesionales en esta área radica en diseñar y desarrollar un programa </p>
+                    </div>
+
+                    <footer class="entry-footer">
+                        <a href="#">Màs Informaciòn</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                            {% endblock %}

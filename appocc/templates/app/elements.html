@@ -1,0 +1,307 @@
+{% extends "app/base.html" %}
+{% load static %} 
+
+{% block titulo %} 
+ EMPRESAS
+ {% endblock %}
+ 
+{% block contenido %}
+
+
+                <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+                    <div class="buy-tickets">
+                        <a class="btn gradient-bg" href="/admin">Acceder</a>
+                        <a class="btn gradient-bg" href="{% url 'Registro' %}">Registro</a>
+                    </div><!-- .buy-tickets -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .header-bar -->
+
+    <div class="page-header elements-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Perfiles de Empresas</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- .site-header -->
+
+<div class="container">
+    <div class="row elements-wrap">
+        <div class="col-12">
+           <!-- <header class="entry-header elements-heading">
+                <h2 class="entry-title">Buttons</h2>
+            </header> -->
+
+            <div class="entry-content elements-container">
+                <!-- <a href="#" class="btn gradient-bg">Lista de empresas</a> -->
+                <a href="#" class="btn">Destacadas</a>
+                <a href="#" class="btn dark-purple">Lista de empresas</a>
+                <!-- <a href="#" class="btn gradient"></a>
+                <a href="#" class="btn dark">Buy Tikets</a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row elements-wrap">
+        <div class="col-12">
+            <header class="entry-header elements-heading">
+                <h1 class="entry-title">Empresas destacadas</h1>
+            </header>
+
+            <div class="entry-content elements-container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="accordion-wrap type-accordion">
+                            <h3 class="entry-title flex justify-content-between align-items-center active">Grupo Modelo<span class="arrow-r"></span></h3>
+                           
+                            <div class="entry-content">
+                                <div class="col-12 col-md-4 col-lg-5">
+                                    <figure>
+                                        <img src="{% static 'imagenes/modelo.png' %}" alt="logo">
+                                    </figure>
+                                </div>
+                                <p>Grupo Modelo S.A. de C.V. es una cervecería mexicana que se especializa en exportar cerveza a la mayoría de los países del mundo, fundada en la Ciudad de México en 1925. Sus marcas de exportación incluyen Corona, Modelo y Pacífico.</p>
+                            </div>
+
+                            <!-- <h3 class="entry-title flex justify-content-between align-items-center">Bimbo<span class="arrow-r"></span></h3>
+
+                            <div class="entry-content">
+                                <div class="col-12 col-md-4 col-lg-5">
+                                    <figure>
+                                        <img src="{% static 'imagenes/pensante.png' %}" alt="logo">
+                                    </figure>
+                                </div>
+                                <p>Grupo Bimbo fabrica más de 13,000 productos y tiene una de las redes de distribución más grandes del mundo, con más de 2.8 millones de puntos de venta, alrededor de 53,000 rutas y somos más de 133,000 colaboradores. 
+                                </p>
+                            </div>
+
+                            <h3 class="entry-title flex justify-content-between align-items-center">Intel<span class="arrow-r"></span></h3>
+
+                            <div class="entry-content">
+                                <p>Intel fue fundada en Mountain View, California, el ya lejano día 18 de julio del año 1968, por Robert Noyce y Gordon Moore, los pioneros de los semiconductores, y ampliamente asociada con el liderazgo ejecutivo y la visión de Andrew Grove.</p>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="tabs">
+                            <ul class="tabs-nav flex">
+                                <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_details">Empleos Grupo Modelo</li>
+                                <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_venue">Plantas de Grupo Modelo en México</li>
+                                <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_organizers">Ambiente laboral</li>
+                            </ul>
+
+                            <div class="tabs-container">
+                                <div id="tab_details" class="tab-content">
+                                    <p><ol>
+                                        <li>Chofer Repartidor - Morelia</li>
+                                        <li>Jefe de Alamcenes - Celaya</li>
+                                        <li>Gerente de Precio - Acapulco de Juárez</li>
+                                        <li>Especialista de Método- Aguascalientes</li>
+                                        <li>Agente ventas - Manzanillo</li>
+                                    </ol></p>
+                                </div>
+
+                                <div id="tab_venue" class="tab-content">
+                                    <p> Se operan 11 plantas cerveceras en México, incluyendo ocho plantas industriales, dos artesanales y una experimental, además de 10 plantas de operaciones verticales (vidrieras, malterías, botes y plastitapas). </p>
+                                </div>
+
+                                <div id="tab_organizers" class="tab-content">
+                                    <p>El compromiso y la disciplina son clave para impulsar una empresa como Grupo Modelo México, que es dirigida por Cassiano De Stefano desde enero de 2018. Para el presidente de la firma cervecera, la clave para destacar es la pasión con la que se desempeñe el trabajo, así como la atención a sus colaboradores para construir un ambiente laboral óptimo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row elements-wrap">
+        <div class="col-12">
+            <header class="entry-header elements-heading">
+                <h1 class="entry-title">Colaboradores Empresas</h1>
+            </header>
+
+            <div class="entry-content elements-container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="circular-progress-bar">
+                            <div class="circle" id="festivals">
+                                <strong></strong>
+                            </div>
+
+                            <h3 class="entry-title"> Citibanamex</h3>
+                            <p>Colaboradores: 36 mil 108</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="circular-progress-bar">
+                            <div class="circle" id="concerts">
+                                <strong></strong>
+                            </div>
+
+                            <h3 class="entry-title"> Walmart </h3>
+                            <p>Colaboradores: 193 mil 567 </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="circular-progress-bar">
+                            <div class="circle" id="conference">
+                                <strong></strong>
+                            </div>
+
+                            <h3 class="entry-title">BBVA. Servicios Financieros</h3>
+                            <p>Colaboradores: 37 mil 65</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="circular-progress-bar">
+                            <div class="circle" id="new_artists">
+                                <strong></strong>
+                            </div>
+
+                            <h3 class="entry-title">Scotiabank. Banca</h3>
+                            <p>Colaboradores: 5cinco mil 927</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row elements-wrap">
+        <div class="col-12">
+            <header class="entry-header elements-heading">
+                <h1 class="entry-title">Empresas Populares en Mexico</h1>
+            </header>
+
+            <div class="entry-content elements-container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="counter-box">
+                            <div class="flex justify-content-center align-items-center">
+                                <img src="{% static 'imagenes/pemex.png' %}" alt="">
+                            </div>
+
+                            <div class="entry-content">
+                                <div class="start-counter" data-to="7735" data-speed="2000">7735</div>
+
+                                <h3 class="entry-title">Sucursales Pemex</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="counter-box">
+                            <div class="flex justify-content-center align-items-center">
+                                <img src="{% static 'imagenes/América Móvil.png' %}" alt="">
+                            </div>
+
+                            <div class="entry-content">
+                                <div class="start-counter" data-to="1915" data-speed="2000">1915</div>
+
+                                <h3 class="entry-title">Sucursales América Móvil</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="counter-box">
+                            <div class="flex justify-content-center align-items-center">
+                                <img src="{% static 'imagenes/comicion.png' %}" alt="">
+                            </div>
+
+                            <div class="entry-content">
+                                <div class="start-counter" data-to="761" data-speed="2000">761</div>
+
+                                <h3 class="entry-title">Sucursales Comición Federal de Electricidad</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="counter-box">
+                            <div class="flex justify-content-center align-items-center">
+                                <img src="{% static 'imagenes/IMSS.png' %}" alt="">
+                            </div>
+
+                            <div class="entry-content">
+                                <div class="start-counter" data-to="1499" data-speed="2000">1499</div>
+
+                                <h3 class="entry-title">Sucursales IMSS</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% for Noticias in Notis %}
+        <div class="row elements-wrap">
+            <div class="col-12">
+                <header class="entry-header elements-heading">
+                    <center> <h1 class="entry-title">Empresas Inovadoras</h1> </center> 
+                </header>
+
+                <div class="entry-content elements-container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="icon-box">
+                                <div class="flex justify-content-between align-items-center">
+                                    <figure>
+                                        <img src="" alt="">
+                                    </figure>
+                                    
+                                    <header class="entry-header">
+                                        <h3 class="entry-title">{{ Noticias.titulo }}</h3>
+
+                                        <div class="date"><span>{{ Noticias.fecha_creacion }}</span></div>
+                                    </header>
+                                </div>
+
+                                <div class="entry-content">
+                                    <p> {{ Noticias.informacion }} </p>
+                                    <p href="https://www.occ.com.mx/"> {{ Noticias.enlace_informacion }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="icon-box">
+                                <div class="flex justify-content-between align-items-center">
+                                    <figure>
+                                        
+                                            {% if imagen.imagen.url %}
+                                                <img src="{{ imagen.imagen.url }}" alt="">
+                                                <img src="{}" alt="">
+                                            {% endif %}
+                                       
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+
+    
+</div>
+
+<div style="height: 120px"></div>
+
+{% endblock %}

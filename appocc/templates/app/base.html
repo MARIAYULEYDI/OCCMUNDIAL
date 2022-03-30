@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>OCCMUNDIAL  {% block titulo %}  {% endblock %} </title>
+    <link rel="shortcut icon" href="static/imagenes/logo-1.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    {% load static %} 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'js/custom.js' %}"></script>
+
+{% block estilos %}
+
+{% endblock %}
+
+</head>
+<body>
+<header class="site-header">
+    <div class="header-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-10 col-lg-2 order-lg-1">
+                    <div class="site-branding">
+                        <div class="site-title">
+                            <a href="#"><img src="{% static 'imagenes/logo-1.png' %}" alt="logo"></a>
+                        </div><!-- .site-title -->
+                    </div><!-- .site-branding -->
+                </div><!-- .col -->
+
+                <div class="col-2 col-lg-7 order-3 order-lg-2">
+                    <nav class="site-navigation">
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                        <ul>
+                            <li><a href="{% url 'inicio' %}">Inicio</a></li>
+                            <li><a href="{% url 'Elementos' %}">Empresas</a></li>
+                            <li><a href="{% url 'Eventos' %}">EMPLEOS</a></li>
+                            <li><a href="{% url 'Eventos Nuevos' %}">Conoce</a></li>
+                            <li><a href="{% url 'Contacto' %}">Contacto</a></li>
+                        </ul>
+                        
+                    </nav><!-- .site-navigation -->
+                </div><!-- .col -->
+               
+
+{% block contenido %}
+
+
+
+
+
+
+{% endblock %}
+
+
+<footer class="site-footer">
+<div class="container">
+<div class="row">
+<div class="col-12">
+    <figure class="footer-logo">
+        <a href="#"><img src="{% static 'imagenes/logo-1.png' %}" alt="logo"></a>
+    </figure>
+
+    <nav class="footer-navigation">
+        <ul class="flex flex-wrap justify-content-center align-items-center">
+            <li><a href="{% url 'inicio' %}">INICIO</a></li>
+            <li><a href="{% url 'Elementos' %}">EMPRESAS</a></li>
+            <li><a href="{% url 'Eventos' %}">EMPLEOS</a></li>
+            <li><a href="{% url 'Eventos Nuevos' %}">Conoce</a></li>
+            <li><a href="{% url 'Contacto' %}">Contacto</a></li>
+        
+        </ul>
+    </nav>
+
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Busca Trabajo &copy;<script>document.write(new Date().getFullYear());</script> OCCMUNDIAL | Bolsa de trabajo <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.facebook.com/" target="_blank">Yuly</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+    <div class="footer-social">
+        <ul class="flex flex-wrap justify-content-center align-items-center">
+           <!-- <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+            <li><a href="https://www.instagram.com/?hl=es-la"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+</footer>
+
+<div class="back-to-top flex justify-content-center align-items-center">
+<span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1395 1184q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+</div>
+
+<script type='text/javascript' src="{% static 'js/jquery.js' %}"></script>
+<script type='text/javascript' src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+<script type='text/javascript' src="{% static 'js/jquery.collapsible.min.js' %}"></script>
+<script type='text/javascript' src="{% static 'js/swiper.min.js' %}"></script>
+<script type='text/javascript' src="{% static 'js/jquery.countdown.min.js' %}"></script>
+<script type='text/javascript' src="{% static 'js/circle-progress.min.js' %}"></script>
+<script type='text/javascript' src="{% static 'js/jquery.countTo.min.js' %}"></script>
+<script type='text/javascript' src="{% static 'js/custom.js' %}"></script>
+
+{% block jss %}
+
+{% endblock %}
+
+
+</body>
+</html>

@@ -1,0 +1,651 @@
+{% extends "app/base.html" %}
+{% load static %} 
+
+{% block contenido %}
+                <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+                    <div class="buy-tickets">
+                        <div class="buscador">
+                            <h2>Realizar Busqueda</h2>
+                            <form action="/buscar/" method="get">
+                                <div class="buscador">
+                                    <label for="name">Buscar <span>*</span> </label>
+                                    <input type="text" name="busqueda" id="busqueda" value="" size="18">
+                                    <p><input type="Submit" values="Submit Form"></p> 
+                                </div>
+                            </form>
+                        </div>
+                        <!-- <a class="btn gradient-bg" href="#"></a> -->
+                        
+                        
+                    </div><!-- .buy-tickets -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .header-bar -->     
+    <div class="swiper-container hero-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" data-date="2018/05/01" style="background: url({% static 'imagenes/principal2.jpg' %}) no-repeat">
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col flex flex-column justify-content-center">
+                                <div class="entry-header">
+                                    <div class="countdown flex align-items-center">
+                                        <!-- <div class="countdown-holder flex align-items-baseline">
+                                            <span class="dday"></span>
+                                            <label></label>
+                                        </div>--><!-- .countdown-holder -->
+
+                                        <!-- <div class="countdown-holder flex align-items-baseline">
+                                            <span class="dhour"></span>
+                                            <label>Jueves</label>
+                                        </div>--><!-- .countdown-holder -->
+
+                                        <!--<div class="countdown-holder flex align-items-baseline">
+                                            <span class="dmin"></span>
+                                            <label>10</label>
+                                        </div>--><!-- .countdown-holder -->
+
+                                        <!--<div class="countdown-holder flex align-items-baseline">
+                                            <span class="dsec"></span>
+                                            <label>2022</label>
+                                        </div>--><!-- .countdown-holder -->
+                                    </div><!-- .countdown -->
+
+                                    <h2 class="entry-title">1 OCCMUNDIAL <br>Bolsa de Trabajo!</h2>
+                                </div><!--- .entry-header -->
+
+                                <div class="entry-footer">
+                                    <a class="btn gradient-bg" href="#">Ingresar</a>
+                                </div><!-- .entry-footer" -->
+                            </div><!-- .col -->
+                        </div><!-- .container -->
+                    </div><!-- .hero-content -->
+                </div><!-- .swiper-slide -->
+            </div><!-- .swiper-wrapper -->
+
+            <div class="swiper-slide" data-date="2019/05/01" style="background: url({% static 'imagenes/principal22.jpg' %}) no-repeat">
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col flex flex-column justify-content-center">
+                                <div class="entry-header">
+                                    <div class="countdown flex align-items-center">
+                                       <!--  <div class="countdown-holder flex align-items-baseline">
+                                            <span class="dday"></span>
+                                            <label>Days</label>
+                                        </div>--><!-- .countdown-holder -->
+
+                                        <!-- <div class="countdown-holder flex align-items-baseline">
+                                            <span class="dhour"></span>
+                                            <label>Hours</label>
+                                        </div>--><!-- .countdown-holder -->
+
+                                        <!--<div class="countdown-holder flex align-items-baseline">
+                                            <span class="dmin"></span>
+                                            <label>Minutes</label>
+                                        </div>--><!-- .countdown-holder -->
+
+                                        <!-- <div class="countdown-holder flex align-items-baseline">
+                                            <span class="dsec"></span>
+                                            <label>Seconds</label>
+                                        </div>--><!-- .countdown-holder -->
+                                    </div><!-- .countdown -->
+
+                                    <h2 class="entry-title">2 Busca Empleo. <br>Conocenos!</h2>
+                                </div><!--- .entry-header -->
+
+                                <div class="entry-footer">
+                                    <a class="btn gradient-bg" href="#">Ingresar</a>
+                                </div><!-- .entry-footer" -->
+                            </div><!-- .col -->
+                        </div><!-- .container -->
+                    </div><!-- .hero-content -->
+                </div><!-- .swiper-slide -->
+            </div><!-- .swiper-wrapper -->
+
+            <div class="swiper-slide"  data-date="2020/05/01" style="background: url({% static 'imagenes/principal3.jpg' %}) no-repeat">
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col flex flex-column justify-content-center">
+                                <div class="entry-header">
+                                    <div class="countdown flex align-items-center">
+                                        <!--<div class="countdown-holder flex align-items-baseline">
+                                            <span class="dday"></span>
+                                            <label>Days</label>
+                                        </div>--><!-- .countdown-holder -->
+
+                                       <!-- <div class="countdown-holder flex align-items-baseline">
+                                            <span class="dhour"></span>
+                                            <label>Hours</label>
+                                        </div>--><!-- .countdown-holder -->
+
+                                       <!-- <div class="countdown-holder flex align-items-baseline">
+                                            <span class="dmin"></span>
+                                            <label>Minutes</label>
+                                        </div>--><!-- .countdown-holder -->
+
+                                       <!-- <div class="countdown-holder flex align-items-baseline">
+                                            <span class="dsec"></span>
+                                            <label>Seconds</label>
+                                        </div>--><!-- .countdown-holder -->
+                                    </div><!-- .countdown -->
+
+                                    <h2 class="entry-title">3 Conoce Empresas. <br>Y busca la ideal para ti!</h2>
+                                </div><!--- .entry-header -->
+
+                                <div class="entry-footer">
+                                    <a class="btn gradient-bg" href="#">Ingresar</a>
+                                </div><!-- .entry-footer" -->
+                            </div><!-- .col -->
+                        </div><!-- .container -->
+                    </div><!-- .hero-content -->
+                </div><!-- .swiper-slide -->
+            </div><!-- .swiper-wrapper -->
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+        </div>
+
+        <div class="swiper-button-prev flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+        </div>
+    </div><!-- .swiper-container -->
+</header><!-- .site-header -->
+
+<div class="homepage-info-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-5">
+                <figure>
+                    <img src="{% static 'imagenes/pensante.png' %}" alt="logo">
+                </figure>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-7">
+                <header class="entry-header">
+                    <h2 class="entry-title">¿BUSCAS EMPLEO?</h2>
+                </header>
+
+                <div class="entry-content">
+                    <p> Te presentamos las mejores vacantes para ti.</p>
+                    <p> Tu podras elegir cúal es la mejor opción para ti.</p>
+                    <p> Informate de manera fácil y conoce las empresas que tienen un empleo para ti.
+                    </p>
+                </div>
+
+                <footer class="entry-footer">
+                    <a href="#">Ver Vacantes</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="homepage-featured-events">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                 <div class="featured-events-wrap flex flex-wrap justify-content-between">
+                    <h2>Cubre todo tipo de puestos:almacenistas, auxiliares, contadores, atención a clientes,asesores comerciales, técnicos y más</h2>
+                    <div>
+                        <figure>
+                            <a href=""><img src="{% static 'imagenes/formulario.gif' %}" alt="1"></a>
+                        </figure>
+                    </div>                 
+                   <div class="event-content-wrap positioning-event-1">
+                        <!-- <figure>
+                            <a href="https://www.bbva.mx/personas/faq/productos/pensiones/riesgo-de-trabajo/trabajo.html"><img src="{% static 'imagenes/bbva.png' %}" alt="1"></a>
+                        </figure> -->
+                        
+                        <!-- <header class="entry-header">
+                            <h3 class="entry-title"></h3>
+
+                            <div class="posted-date"></div>
+                        </header> -->
+                    </div>
+
+                   <div class="event-content-wrap positioning-event-2">
+                        <figure>
+                            <a href="https://mx.jobrapido.com/?r=auto&w=adecco&utm_source=adwords&utm_medium=cpc&utm_campaign=ADWORDS_MX_JOB_SEARCH&utm_agid=1845340901&utm_kwid=19643128181&gclid=CjwKCAiA6Y2QBhAtEiwAGHybPZm8nzmEbPlIPomrMv6yFhlJG7fZCzwCVVfCN1wHvT2mHU1f1fbfMBoCYT4QAvD_BwE"><img src="{% static 'imagenes/soli.jpeg' %}" alt=""></a>
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">CREA TU CUENTA</h3>
+
+                            <div class="posted-date"></div>
+                        </header>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-3">
+                        <!-- <figure>
+                            <a href="https://www.banamex.com/bolsa-de-trabajo/index.html"><img src="{% static 'images/citi.png' %}" alt=""></a>
+                        </figure> -->
+
+                        <!-- <header class="entry-header">
+                            <h3 class="entry-title">CREA TU CUENTA</h3>
+
+                            <div class="posted-date"></div>
+                        </header> -->
+                    </div> 
+
+                     <div class="event-content-wrap positioning-event-4 half">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/events-in-london.jpg' %}" alt=""></a>
+                        </figure>
+                    </div> 
+
+                    <div class="event-content-wrap positioning-event-5 half">
+                        <figure>
+                            <a href="{% url 'inicio' %}"><img src="{% static 'images/imagen1.png' %}" alt=""></a>
+                        </figure>
+                    </div>-->
+
+                   <!-- <div class="event-content-wrap positioning-event-6 half">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/summer-festivals.jpg' %}" alt=""></a>
+                        </figure>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-7">
+                        <figure>
+                            <a href="https://www.intel.la/content/www/xl/es/support/articles/000022528/programs.html"><img src="{% static 'images/intel.png' %}" alt=""></a>
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">Intel</h3>
+
+                            <div class="posted-date">18 de julio de 1968</div>
+                        </header>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-8">
+                        <figure>
+                            <a href="https://www.grupobimbo.com/es/bolsa-de-trabajo"><img src="{% static 'images/Bimbo.png' %}" alt="1"></a>
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">Bimbo</h3>
+
+                            <div class="posted-date">1943</div>
+                        </header>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-9">
+                        <figure>
+                            <a href="https://www.cemexmexico.com/acerca-de-cemex/trabaja-con-nosotros"><img src="{% static 'images/cemex.png' %}" alt=""></a>
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title"> Materiales para la industria</h3>
+
+                            <div class="posted-date">1906</div>
+                        </header>
+                    </div>-->
+
+                   <!-- <div class="event-content-wrap positioning-event-10 half">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/summer-festival.jpg' %}" alt=""></a>
+                        </figure>
+                    </div>-->
+
+                   <!-- <div class="event-content-wrap positioning-event-11 half">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/autumn.jpg' %}" alt=""></a>
+                        </figure>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="homepage-next-events">
+    <div class="container">
+        <div class="row">
+            <div class="next-events-section-header">
+                <h2 class="entry-title">Vacantes Actualmente</h2>
+                <p>Conoce los Empleos Vacantes en la actualidad y solicita informaciòn sobre tu interes</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="next-event-wrap">
+                    <figure>
+                        <a href="#"><img src="{% static 'images/ventas.png' %}" alt="1"></a>
+
+                        <div class="event-rating">16,606</div>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h3 class="entry-title">Vacantes -Ventas</h3>
+
+                        <div class="posted-date">Jueves <span>Febrero 10, 2022</span></div>
+                    </header>
+
+                    <div class="entry-content">
+                        <p>El trabajo de ventas consiste en ganarse el interés de clientes potenciales y luego convertirlos en clientes reales. Los vendedores son necesarios en casi los oficios y sectores, además tienen la oportunidad de ganar salarios altos.</p>
+                    </div>
+
+                    <footer class="entry-footer">
+                        <a href="#">Màs informaciòn</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="next-event-wrap">
+                    <figure>
+                        <a href="#"><img src="{% static 'images/contabilidad.png' %}" alt="1"></a>
+
+                        <div class="event-rating">6,916</div>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h3 class="entry-title">Vacante -Contabilidad-Finanzas</h3>
+
+                        <div class="posted-date">Jueves <span>Febrero 10, 2022</span></div>
+                    </header>
+
+                    <div class="entry-content">
+                        <p>Se dedica al estudio de la obtención de capital para la inversión en bienes productivos y de las decisiones de inversión de los ahorradores.</p>
+                    </div>
+
+                    <footer class="entry-footer">
+                        <a href="#">Màs Informaciòn</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="next-event-wrap">
+                    <figure>
+                        <a href="#"><img src="{% static 'images/tecnologia.png' %}" alt="1"></a>
+
+                        <div class="event-rating">9, 459</div>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h3 class="entry-title">Vacante -Tecnologìas de la Informaciòn-Sistemas</h3>
+
+                        <div class="posted-date">Jueves <span>Febrero 10, 2022</span></div>
+                    </header>
+
+                    <div class="entry-content">
+                        <p>comprende el proceso de producir de manera efectiva un software o sistema que sea funcional tras cumplir con un conjunto de requisitos, por lo cual el objetivo principal de los profesionales en esta área radica en diseñar y desarrollar un programa </p>
+                    </div>
+
+                    <footer class="entry-footer">
+                        <a href="#">Màs Informaciòn</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="homepage-regional-events">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header class="regional-events-heading entry-header flex flex-wrap justify-content-between align-items-center">
+                    <h2 class="entry-title">Blog OCCMUNDIAL</h2>
+
+                     <div class="select-location">
+                        <select>
+                            <option>currículums</option>
+                        </select>
+                    </div>
+                </header>
+
+                <div class="swiper-container homepage-regional-events-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="{% static 'imagenes/entrevista1.jpg' %}" alt="">
+
+                                <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+                            </figure><!-- .hero-image -->
+
+                            <div class="entry-header">
+                                <h2 class="entry-title">Entrevista de trabajo: 7 preguntas que debes dominar </h2>
+                            </div><!--- .entry-header -->
+
+                            <!-- <div class="entry-footer">
+                                <div class="posted-date">Saturday <span>Jan 27, 2018</span></div>
+                            </div>.entry-footer" -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="{% static 'imagenes/acta.jpg' %}" alt="">
+
+                                <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+                            </figure><!-- .hero-image -->
+
+                            <div class="entry-header">
+                                <h2 class="entry-title">Acta administrativa en el trabajo: cuándo aplica.</h2>
+                            </div><!--- .entry-header -->
+
+                            <!-- <div class="entry-footer">
+                                <div class="posted-date">Saturday <span>Jan 27, 2018</span></div>
+                            </div>.entry-footer" -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="{% static 'imagenes/nominass.jpg' %}" alt="">
+
+                                <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+                            </figure><!-- .hero-image -->
+
+                            <div class="entry-header">
+                                <h2 class="entry-title">Lo que debes saber sobre tu recibo de nómina.</h2>
+                            </div><!--- .entry-header -->
+
+                            <!-- <div class="entry-footer">
+                                <div class="posted-date">Saturday <span>Jan 27, 2018</span></div>
+                            </div>.entry-footer" -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="{% static 'imagenes/estudio.jpg' %}" alt="">
+
+                                <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+                            </figure><!-- .hero-image -->
+
+                            <div class="entry-header">
+                                <h2 class="entry-title">Estudio Socioeconómico Laboral.</h2>
+                            </div><!--- .entry-header -->
+
+                            <!-- <div class="entry-footer">
+                                <div class="posted-date">Saturday <span>Jan 27, 2018</span></div>
+                            </div>.entry-footer" -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="{% static 'imagenes/correo.jpg' %}" alt="">
+
+                                <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+                            </figure><!-- .hero-image -->
+
+                            <div class="entry-header">
+                                <h2 class="entry-title">FYI: ¿qué significan las abreviaturas de tus correos electrónicos?</h2>
+                            </div><!--- .entry-header -->
+
+                            <!-- <div class="entry-footer">
+                                <div class="posted-date">Saturday <span>Jan 27, 2018</span></div>
+                            </div>.entry-footer" -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="{% static 'imagenes/carta.jpg' %}" alt="">
+
+                                <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+                            </figure><!-- .hero-image -->
+
+                            <div class="entry-header">
+                                <h2 class="entry-title">¿Qué historia debo poner en los exámenes psicométricos?</h2>
+                            </div><!--- .entry-header -->
+
+                            <!-- <div class="entry-footer">
+                                <div class="posted-date">Saturday <span>Jan 27, 2018</span></div>
+                            </div>.entry-footer" -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="{% static 'imagenes/sueldo.jpg' %}" alt="">
+
+                                <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+                            </figure><!-- .hero-image -->
+
+                            <div class="entry-header">
+                                <h2 class="entry-title">Mi carteraSueldo bruto y neto: ¿cuál es la diferencia? </h2>
+                            </div><!--- .entry-header -->
+
+                                  <!-- <div class="entry-footer">
+                    <div class="posted-date">Saturday <span>Jan 27, 2018</span></div>
+                </div>.entry-footer" -->
+            </div><!-- .swiper-slide -->
+        </div><!-- .swiper-wrapper -->
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+        </div>
+
+        <div class="swiper-button-prev flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+        </div>
+    </div><!-- .swiper-container -->
+
+    <div class="events-partners">
+        <header class="entry-header">
+            <h2 class="entry-title">Empresas Mexicanas</h2>
+        </header>
+
+        <div class="events-partners-logos flex flex-wrap justify-content-between align-items-center">
+            <div class="event-partner-logo">
+                <a href="https://www.grupobimbo.com/"><img src="{% static 'images/bimbono.png' %}" alt=""></a>
+            </div>
+
+            <div class="event-partner-logo">
+                <a href="https://marinela.com.mx/"><img src="{% static 'images/marinelita.png' %}" alt=""></a>
+            </div>
+
+            <div class="event-partner-logo">
+                <a href="https://www.grupoelektra.com.mx/es/sustentabilidad/quienes-somos.html"><img src="{% static 'images/grupo.png' %}" alt=""></a>
+            </div>
+
+            <div class="event-partner-logo">
+                <a href="https://www.gruposalinas.com/es/empresas/tv-azteca"><img src="{% static 'images/tv.png' %}" alt=""></a>
+            </div>
+
+            <div class="event-partner-logo">
+                <a href="https://www.televisa.com/"><img src="{% static 'images/televisa.png' %}" alt=""></a>
+            </div>
+
+            <!---->  <div class="event-partner-logo">
+                <a href="#"><img src="images/himalayas.png" alt=""></a>
+            </div>
+
+            <div class="event-partner-logo">
+                <a href="#"><img src="images/sa.png" alt=""></a>
+            </div>
+
+            <div class="event-partner-logo">
+                <a href="#"><img src="images/south-porth.png" alt=""></a>
+            </div>
+
+            <div class="event-partner-logo">
+                <a href="#"><img src="images/pixar.png" alt=""></a>
+            </div>
+
+            <div class="event-partner-logo">
+                <a href="#"><img src="images/the-pirate.png" alt=""></a>
+            </div> --> 
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+
+{{SeccionNotis}}
+
+
+
+
+<div class="homepage-info-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-5">
+                <figure>
+                    <img src="{% static 'imagenes/portada1.png' %}" alt="logo">
+                </figure>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-7">
+                <header class="entry-header">
+                    <h2 class="entry-title">EMPRESAS</h2>
+                </header>
+
+                <div class="entry-content">
+                    <p> Estas empresas  tienen las mejores vacantes para ti.</p>
+                    <p> Conoce cuales son y como trabajan.</p>
+                    <p> Más cerca de ti, informate hacerca de estas empresas y lo que ofrecen para ti.
+                    </p>
+                </div>
+
+                <footer class="entry-footer">
+                    <a href="{% url 'Elementos' %}">Ver Empresas</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="newsletter-subscribe">
+<div class="container">
+<div class="row">
+<div class="col-12">
+    <header class="entry-header">
+        <h2 class="entry-title">Suscríbete para recibir nuevas actualizaciones</h2>
+        <p>Únete a nuestra Base de Datos Ya!</p>
+    </header>
+
+    <div class="newsletter-form">
+        <form class="flex flex-wrap justify-content-center align-items-center">
+            <div class="col-md-12 col-lg-3">
+                <input type="text" placeholder="Nombre">
+            </div>
+
+            <div class="col-md-12 col-lg-6">
+                <input type="email" placeholder="Correo electronico">
+            </div>
+
+            <div class="col-md-12 col-lg-3">
+                <input class="btn gradient-bg" type="submit" value="Suscríbete">
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div> -->
+
+                            {% endblock %}

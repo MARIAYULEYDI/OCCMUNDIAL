@@ -1,0 +1,181 @@
+{% extends "app/base.html" %}
+{% load static %} 
+
+{% block titulo %} 
+ Informaciòn
+ {% endblock %}
+ 
+{% block contenido %}
+
+
+                <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+                    <div class="buy-tickets">
+                        <!--<a class="btn gradient-bg" href="#">Buy Tickets</a>-->
+                    </div><!-- .buy-tickets -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .header-bar -->
+
+    <div class="page-header events-news-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Nueva Informaciòn</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- .site-header -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <article class="events-news-post">
+                <header class="entry-header">
+                    <h2 class="entry-title"><a href="#">Àreas con mayor demanda de empleo en México</a></h2>
+
+                    <div class="entry-meta flex align-items-center">
+                        <!--<div class="posted-author"><a href="#">by James Williams</a></div>
+
+                        <div class="post-comments"><a href="#">2 Comments</a></div>-->
+                    </div>
+                </header>
+
+                <figure>
+                    <center>
+                    <a href="#"><img src="{% static 'images/10.png' %}" alt=""></a>
+                </center>
+                    <!--<div class="posted-date"><span>Feb</span><span>11</span><span>‘18</span></div>-->
+                </figure>
+
+                <div class="entry-content">
+                    <p>De acuerdo con el Termómetro Laboral de OCC Mundial, el 11% de las empresas está contratando más de lo habitual y un 27% mantiene la incorporación de talento con normalidad en nuestro país.
+
+                        ¿Qué oportunidades ofreció el mercado a pesar de la pandemia? Los datos analizados por LinkedIn ubican estos empleos y aptitudes como las de mayor crecimiento a finales del año pasado y que liderarán las contrataciones en el 2021:</p>
+                </div>
+            </article>
+
+            <article class="events-news-post">
+                <header class="entry-header">
+                    <h2 class="entry-title"><a href="#">1. PROFESIONALES MÉDICOS ESPECIALIZADOS</a></h2>
+
+                    <div class="entry-meta flex align-items-center">
+                       <!-- <div class="posted-author"><a href="#">by James Williams</a></div>
+
+                        <div class="post-comments"><a href="#">2 Comments</a></div>-->
+                    </div>
+                </header>
+
+                <figure>
+                    <a href="#"><img src="{% static 'images/medicina.pgn' %}" alt=""></a>
+
+                    <!--<div class="posted-date"><span>Feb</span><span>11</span><span>‘18</span></div>-->
+                </figure>
+
+                <div class="entry-content">
+                    <p>Al tratarse de una crisis sanitaria a nivel mundial, la demanda de profesionales médicos especializados incrementó. En México, esta categoría creció 91% en 2020. Específicamente en el sector de enfermería, el crecimiento fue de 171 por ciento. La Ciudad de México, Tijuana, Monterrey y Guadalajara fueron las localidades que ofrecieron mayores oportunidades en este ramo.
+
+                        Puestos con mayor oferta: doctor, médico de familia, químico analítico, enfermero y médico laboral.
+                        Aptitudes: paramédicas, enfermería, laboratorio, dispositivos médicos, farmacia y nutrición.</p>
+                </div>
+            </article>
+
+            <article class="events-news-post">
+                <header class="entry-header">
+                    <h2 class="entry-title"><a href="#">2. DESARROLLO EMPRESARIAL Y VENTAS</a></h2>
+
+                    <div class="entry-meta flex align-items-center">
+                       <!-- <div class="posted-author"><a href="#">by James Williams</a></div>
+
+                        <div class="post-comments"><a href="#">2 Comments</a></div>-->
+                    </div>
+                </header>
+
+                <figure>
+                    <center>
+                    <a href="#"><img src="{% static 'images/ven.png' %}" alt=""></a>
+                </center>
+                   <!-- <div class="posted-date"><span>Feb</span><span>11</span><span>‘18</span></div>-->
+                </figure>
+
+                <div class="entry-content">
+                    <p>La pandemia obligó a muchas empresas a dar un giro en el negocio, a adaptarse a nuevos comportamientos de los consumidores y en este contexto, los puestos de responsables de desarrollo empresarial y asesor de ventas tuvieron un crecimiento el año pasado. La Ciudad de México, Tijuana y Monterrey fueron los lugares con la mayor concentración de vacantes en estas áreas.
+
+                        Puestos con mayor oferta: especialista en desarrollo empresarial, asesor de ventas, representante de desarrollo empresarial y especialista comercial.
+                        Aptitudes: ventas, puesta en marcha, gestión de ventas, estrategia empresarial y negociación.</p>
+                </div>
+            </article>
+            <article class="events-news-post">
+                <header class="entry-header">
+                    <h2 class="entry-title"><a href="#">3. SERVICIOS CREATIVOS </a></h2>
+
+                    <div class="entry-meta flex align-items-center">
+                       <!-- <div class="posted-author"><a href="#">by James Williams</a></div>
+
+                        <div class="post-comments"><a href="#">2 Comments</a></div>-->
+                    </div>
+                </header>
+
+                <figure>
+                    <center>
+                    <a href="#"><img src="{% static 'images/mundial.png' %}" alt=""></a>
+                </center>
+                   <!-- <div class="posted-date"><span>Feb</span><span>11</span><span>‘18</span></div>-->
+                </figure>
+
+                <div class="entry-content">
+                    <p>Cuando el teletrabajo pasó de ser una tendencia a una realidad más generalizada, las empresas aprovecharon esta oportunidad y empezaron a buscar recursos creativos fuera de sus oficinas. Esto generó un auge para los trabajadores autónomos que aprovecharon la coyuntura del home office. Concretamente, el sector de redacción creció un 95 % en 2020, ya que muchas empresas se centraron en generar más contenido en línea. Las oportunidades se concentraron en Ciudad de México, Guadalajara, Torreón, Villahermosa y Puebla.
+
+                        Puestos con mayor oferta: redactor, animador, ilustrador, artista y artista 3D.
+                        Aptitudes: ilustración, redacción, pintura, escritura creativa, diseño gráfico, animación, Motion Graphics y modelado 3D.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="blog-pagination">
+                <ul class="flex align-items-center">
+                    <li><a href="#">01</a></li>
+                    <li class="active"><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="newsletter-subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header class="entry-header">
+                    <h2 class="entry-title">Subscribe to our newsletter to get the latest trends & news</h2>
+                    <p>Join our database NOW!</p>
+                </header>
+
+                <div class="newsletter-form">
+                    <form class="flex flex-wrap justify-content-center align-items-center">
+                        <div class="col-md-12 col-lg-3">
+                            <input type="text" placeholder="Name">
+                        </div>
+
+                        <div class="col-md-12 col-lg-6">
+                            <input type="email" placeholder="Your e-mail">
+                        </div>
+
+                        <div class="col-md-12 col-lg-3">
+                            <input class="btn gradient-bg" type="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+{% endblock %}
