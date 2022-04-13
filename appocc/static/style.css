@@ -565,7 +565,7 @@ a:hover, a:active {
 .homepage-featured-events {
     height: auto;
     padding: 41px 0 216px;
-    background: url("imagenes/FondoEmpres.jpg") no-repeat  center;
+    background: url("images/FondoEmpres.jpg") no-repeat  center;
     background-size: cover !important;
 }
 
