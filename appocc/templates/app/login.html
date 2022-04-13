@@ -4,7 +4,7 @@
 
 
 {% block titulo %} 
- Reegistro
+ LOGIN
  {% endblock %}
 
  
@@ -13,7 +13,7 @@
 
                 <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
                     <div class="buy-tickets">
-                        <a class="btn gradient-bg" href="/admin/">Admin</a>
+                        <a class="btn gradient-bg" href="/admin">Admin</a>
                     </div><!-- .buy-tickets -->
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-12">
                     <header class="entry-header">
-                        <h1 class="entry-title">Registro</h1>
+                        <h1 class="entry-title"></h1>
                     </header>
                 </div>
             </div>
@@ -33,7 +33,7 @@
     </div>
 </header><!-- .site-header -->
 
-<!--<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4">
             <div class="contact-location-details">
@@ -89,49 +89,51 @@
             </div>
         </div>
     </div>
-</div>-->
+</div>
 
-<!-- <div class="contact-page-map">
+<div class="contact-page-map">
     <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=university of san francisco&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </div>-->
 
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col-12">
             <div class="contact-form">
-                <form class="row" method="post">
-                    {% csrf_token %}
-                    <div class="col-12 col-md-4"><input type="text" placeholder="Name" name="{{ form.nombre.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="text" placeholder="apellido" name="{{ form.apellido.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="text" placeholder="telefono" name="{{ form.telefono.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="email" placeholder="email" name="{{ form.email.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="email" placeholder="confi_email" name="{{ form.confirmacion.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="text" placeholder="edad" name="{{ form.edad.name}}"></div>
-                    
-                    <div class="col-12 flex justify-content-center"><input class="btn gradient-bg" type="Submit" value="Registrarse"></div>
+                <form class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <input type="email" placeholder="Your e-mail">
+                    </div>
+                    <div class="col-md-12 col-lg-3">
+                        <input type="text" placeholder="Name">
+                    </div> -->
+                    <!-- <div class="col-12 col-md-4"><input type="text" placeholder=""></div>
+                    <div class="col-12"><textarea placeholder="Message" rows="8"></textarea></div> -->
+                    <!-- <div class="col-12 flex justify-content-center"><input class="btn gradient-bg" type="submit" value="Contactar"></div> -->
+                    <!-- <div class="col-md-12 col-lg-3">
+                        <input class="btn gradient-bg" type="submit" value="Suscríbete">
+                    </div>
                 </form>
             </div>
         </div>
     </div>
-</div>
+</div>  -->
 
-<!-- <div class="newsletter-subscribe">
+<div class="newsletter-subscribe">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <header class="entry-header">
+                <!-- <header class="entry-header">
                     <h2 class="entry-title">Suscríbete para recibir nuevas actualizaciones</h2>
                     <p>Únete a nuestra Base de Datos Ya!</p>
-                </header>
+                </header> -->
 
                 <div class="newsletter-form">
                     <form class="flex flex-wrap justify-content-center align-items-center">
-                        <div class="col-md-12 col-lg-3">
-                            <input type="text" placeholder="Name">
-                        </div>
-
                         <div class="col-md-12 col-lg-6">
                             <input type="email" placeholder="Your e-mail">
+                        </div>
+                        <div class="col-md-12 col-lg-3">
+                            <input type="text" placeholder="Password">
                         </div>
 
                         <div class="col-md-12 col-lg-3">
@@ -142,6 +144,6 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
 {% endblock %}

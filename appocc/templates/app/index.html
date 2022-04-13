@@ -2,18 +2,26 @@
 {% load static %} 
 
 {% block contenido %}
+
+<div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+    <div class="buy-tickets">
+        <a class="btn gradient-bg" href="#" >
+            <div class="buscador">
+                <h2>Realizar Busqueda</h2>
+                <form action="/buscar/" method="get">
+                    <div class="buscador">
+                        <label for="name">Buscar <span>*</span> </label>
+                        <input type="text" name="busqueda" id="busqueda" value="" size="18">
+                        <p><input type="Submit" values="Submit Form"></p> 
+                    </div>
+                </form>
+            </div>
+        </a>
+    </div><!-- .buy-tickets -->
+</div><!-- .col -->
                 <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
                     <div class="buy-tickets">
-                        <div class="buscador">
-                            <h2>Realizar Busqueda</h2>
-                            <form action="/buscar/" method="get">
-                                <div class="buscador">
-                                    <label for="name">Buscar <span>*</span> </label>
-                                    <input type="text" name="busqueda" id="busqueda" value="" size="18">
-                                    <p><input type="Submit" values="Submit Form"></p> 
-                                </div>
-                            </form>
-                        </div>
+                       
                         <!-- <a class="btn gradient-bg" href="#"></a> -->
                         
                         
@@ -24,7 +32,7 @@
     </div><!-- .header-bar -->     
     <div class="swiper-container hero-slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" data-date="2018/05/01" style="background: url({% static 'imagenes/principal2.jpg' %}) no-repeat">
+            <div class="swiper-slide" data-date="2018/05/01" style="background: url({% static 'images/principal02.png' %}) no-repeat">
                 <div class="hero-content">
                     <div class="container">
                         <div class="row">
@@ -64,7 +72,7 @@
                 </div><!-- .swiper-slide -->
             </div><!-- .swiper-wrapper -->
 
-            <div class="swiper-slide" data-date="2019/05/01" style="background: url({% static 'imagenes/principal22.jpg' %}) no-repeat">
+            <div class="swiper-slide" data-date="2019/05/01" style="background: url({% static 'images/principal22.jpg' %}) no-repeat">
                 <div class="hero-content">
                     <div class="container">
                         <div class="row">
@@ -104,7 +112,7 @@
                 </div><!-- .swiper-slide -->
             </div><!-- .swiper-wrapper -->
 
-            <div class="swiper-slide"  data-date="2020/05/01" style="background: url({% static 'imagenes/principal3.jpg' %}) no-repeat">
+            <div class="swiper-slide"  data-date="2020/05/01" style="background: url({% static 'images/principal3.jpg' %}) no-repeat">
                 <div class="hero-content">
                     <div class="container">
                         <div class="row">

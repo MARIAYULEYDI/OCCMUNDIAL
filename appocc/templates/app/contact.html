@@ -99,11 +99,11 @@
     <div class="row">
         <div class="col-12">
             <div class="contact-form">
-                <form class="row">
+                <form class="row" method="post">
                     {% csrf_token %}
                     <div class="col-12 col-md-4"><input type="text" placeholder="Name" name="{{ form.nombre.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="email" placeholder="email" email="{{ form.email.email}}"></div>
-                    <div class="col-12 "><textarea placeholder="Comentario" rows="8" comentarios="{{ form.comentarios.comentarios}}"></textarea></div>
+                    <div class="col-12 col-md-4"><input type="email" placeholder="email" name="{{ form.email.name}}"></div>
+                    <div class="col-12 "><textarea placeholder="Comentario" rows="8" name="{{ form.comentarios.name}}"></textarea></div>
                     
                     <div class="col-12 flex justify-content-center"><input class="btn gradient-bg" type="Submit" value="Enviar"></div>
                 </form>
