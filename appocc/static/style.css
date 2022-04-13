@@ -907,7 +907,7 @@ a:hover, a:active {
 .homepage-regional-events {
     min-height: 1500px;
     padding-top: 280px;
-    background: url("imagenes/foi.jpg") no-repeat;
+    background: url("images/foi.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -1142,23 +1142,23 @@ a:hover, a:active {
 }
 
 .events-page-header {
-    background-image: url("imagenes/portadaempresa.png");
+    background-image: url("images/portadaempresa.png");
 }
 
 .single-event-page-header {
-    background-image: url("imagenes/portadaempresa.png");
+    background-image: url("images/portadaempresa.png");
 }
 
 .events-news-page-header {
-    background-image: url("imagenes/portadaempresa.png");
+    background-image: url("images/portadaempresa.png");
 }
 
 .contact-page-header {
-    background-image: url("imagenes/portadaempresa.png");
+    background-image: url("images/portadaempresa.png");
 }
 
 .elements-page-header {
-    background-image: url("imagenes/portadaempresa.png");
+    background-image: url("images/portadaempresa.png");
 }
 
 /*--------------------------------------------------------------
@@ -2155,7 +2155,7 @@ ul.tabs-nav .tab-nav.active {
 --------------------------------------------------------------*/
 .site-footer {
     padding: 75px 0;
-    background: url(imagenes/fondis.png) no-repeat  center;
+    background: url(images/fondis.png) no-repeat  center;
     text-align: center;
 }
 
