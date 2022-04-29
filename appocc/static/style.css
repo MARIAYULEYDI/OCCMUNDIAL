@@ -252,7 +252,7 @@ a:hover, a:active {
     overflow-x: scroll;
     padding: 30px;
     margin: 0;
-    background: #107050;
+    background: #007bff;
     transition: all 0.35s;
 }
 
@@ -928,8 +928,8 @@ a:hover, a:active {
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, #107050), color-stop(100%, #4dd8ad)); /* safari4+,chrome */
     background: -webkit-linear-gradient(180deg, #107050 0%, #02231C 100%); /* safari5.1+,chrome10+ */
     background: -o-linear-gradient(180deg, #02231C 0%, #4dd8ad 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(180deg, #4dd8ad 0%, #107050 100%); /* ie10+ */
-    background: linear-gradient(270deg, #107050 0%, #02231C 100%); /* w3c */
+    background: linear-gradient(270deg, #339be2 0%, #3752cb 100%); /* ie10+ */
+    background: linear-gradient(270deg, #339be2 0%, #3752cb 100%);/* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#581479', endColorstr='#ab00e5',GradientType=1 ); /* ie6-9 */
     color: #fff;
     outline: none;

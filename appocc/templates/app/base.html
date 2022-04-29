@@ -8,8 +8,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
+ 
     {% load static %} 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
@@ -52,10 +51,17 @@
                         </div><!-- .hamburger-menu -->
                         <ul>
                             <li><a href="{% url 'inicio' %}">Inicio</a></li>
+                          
                             <li><a href="{% url 'Elementos' %}">Empresas</a></li>
                             <li><a href="{% url 'Eventos' %}">EMPLEOS</a></li>
-                            <li><a href="{% url 'Eventos Nuevos' %}">CONOCE</a></li>
+                            <!-- <li><a href="{% url 'Eventos Nuevos' %}">CONOCE</a></li> -->
                             <li><a href="{% url 'Contacto' %}">Contacto</a></li>
+                            <!-- <li><a href="{% url 'Contacto' %}">Registro</a></li> -->
+                            {% if user.is_authenticated %}
+                            <li><a href="{% url 'logout' %}">Logout</a></li>
+                            {% else %}
+                            <li><a href="{% url 'login' %}">Login</a></li>
+                            {% endif %}
                         </ul>
                         
                     </nav><!-- .site-navigation -->
@@ -92,7 +98,7 @@
     </nav>
 
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Busca Trabajo &copy;<script>document.write(new Date().getFullYear());</script> OCCMUNDIAL | Bolsa de trabajo <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.facebook.com/" target="_blank">Yuly</a>
+  Busca Trabajo &copy;<script>document.write(new Date().getFullYear());</script> OCCMUNDIAL | Bolsa de trabajo <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="/admin/" target="_blank">Admin</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
     <div class="footer-social">

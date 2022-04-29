@@ -4,16 +4,16 @@
 
 
 {% block titulo %} 
- Reegistro
+ Registro
  {% endblock %}
 
  
 {% block contenido %}
-<link rel="shortcut icon" href="static/images/OCCMUNDIAL.png">
 
                 <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
                     <div class="buy-tickets">
-                        <a class="btn gradient-bg" href="/admin/">Admin</a>
+                        <!-- <a class="btn gradient-bg" href="/admin/">Admin</a> -->
+                        <a class="btn gradient-bg" href="/digits/">Digitos</a>
                     </div><!-- .buy-tickets -->
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -99,16 +99,39 @@
     <div class="row">
         <div class="col-12">
             <div class="contact-form">
+                <h3 class="text-center">Registro Usuario</h3>
+                &nbsp;
                 <form class="row" method="post">
                     {% csrf_token %}
-                    <div class="col-12 col-md-4"><input type="text" placeholder="Name" name="{{ form.nombre.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="text" placeholder="apellido" name="{{ form.apellido.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="text" placeholder="telefono" name="{{ form.telefono.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="email" placeholder="email" name="{{ form.email.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="email" placeholder="confi_email" name="{{ form.confirmacion.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="text" placeholder="edad" name="{{ form.edad.name}}"></div>
+                    {% if form.errors %}
+                    <div class="alert alert-danger alert-dismissible" role="alert">
+                        <div id="form_errors">
+                            {% for key, value in form.errors.items %}
+                            <strong>{{ value }}</strong>
+                            {% endfor %}
+                        </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span arial-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    {% endif %}
+                    <div class="col-12 col-md-4"><input type="text" placeholder="username" name="{{ form.username.name}}" id="username" value=""></div>
+                    <div class="col-12 col-md-4"><input type="text" placeholder="first_name" name="{{ form.first_name.name}}" id="first_name" value=""></div>
+                    <div class="col-12 col-md-4"><input type="text" placeholder="last_name" name="{{ form.last_name.name}} "id="last_name" value=""></div>
+                    <div class="col-12 col-md-4"><input type="email" placeholder="email" name="{{ form.email.name}}" id="email" value=""></div>
+                    <div class="col-12 col-md-4"><input type="password" placeholder="password1" name="{{ form.password1.name}}" id="password1" value=""></div>
+                    <div class="col-12 col-md-4"><input type="password" placeholder="password2" name="{{ form.password2.name}}"  id="password2" value="" ></div>
                     
-                    <div class="col-12 flex justify-content-center"><input class="btn gradient-bg" type="Submit" value="Registrarse"></div>
+                    <div class=" col-12 flex justify-content-center">
+                        <input class="btn gradient-bg" type="Submit" value="Registrarse">
+                        &nbsp;
+                        <input class="btn gradient-bg" type="reset" value="Reset">
+                    </div>
+                        &nbsp;
+                    <div class="col-12 flex justify-content-center">
+                        <p>Ya tienes cuenta? Ingresa <a href="{% url 'login' %}">Aqui</a> |
+                        <a href="{% url 'inicio' %}">Regresar a Inicio</a></p>
+                    </div>
                 </form>
             </div>
         </div>

@@ -6,13 +6,13 @@
 <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
     <div class="buy-tickets">
         <a class="btn gradient-bg" href="#" >
-            <div class="buscador">
+            <div class="">
                 <h2>Realizar Busqueda</h2>
                 <form action="/buscar/" method="get">
                     <div class="buscador">
-                        <label for="name">Buscar <span>*</span> </label>
-                        <input type="text" name="busqueda" id="busqueda" value="" size="18">
-                        <p><input type="Submit" values="Submit Form"></p> 
+                        <!-- <label for="name">Buscar <span>*</span> </label> -->
+                        <input type="text" name="busqueda" id="busqueda" value="">
+                        <p><input  type="Submit" values="Submit Form"></p> 
                     </div>
                 </form>
             </div>
@@ -32,7 +32,7 @@
     </div><!-- .header-bar -->     
     <div class="swiper-container hero-slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" data-date="2018/05/01" style="background: url({% static 'images/principal02.png' %}) no-repeat">
+            <div class="swiper-slide" data-date="2018/05/01" style="background: url({% static 'images/principal2.jpg' %}) no-repeat">
                 <div class="hero-content">
                     <div class="container">
                         <div class="row">
@@ -60,11 +60,11 @@
                                         </div>--><!-- .countdown-holder -->
                                     </div><!-- .countdown -->
 
-                                    <h2 class="entry-title">1 OCCMUNDIAL <br>Bolsa de Trabajo!</h2>
+                                    <h2 class="entry-title"> OCCMUNDIAL <br>Bolsa de Trabajo!</h2>
                                 </div><!--- .entry-header -->
 
                                 <div class="entry-footer">
-                                    <a class="btn gradient-bg" href="#">Ingresar</a>
+                                    <a class="btn gradient-bg" href="{% url 'registro' %}">Registrate</a>
                                 </div><!-- .entry-footer" -->
                             </div><!-- .col -->
                         </div><!-- .container -->
@@ -72,7 +72,7 @@
                 </div><!-- .swiper-slide -->
             </div><!-- .swiper-wrapper -->
 
-            <div class="swiper-slide" data-date="2019/05/01" style="background: url({% static 'images/principal2.jpg' %}) no-repeat">
+            <div class="swiper-slide" data-date="2019/05/01" style="background: url({% static 'images/principal3.jpg' %}) no-repeat">
                 <div class="hero-content">
                     <div class="container">
                         <div class="row">
@@ -100,11 +100,11 @@
                                         </div>--><!-- .countdown-holder -->
                                     </div><!-- .countdown -->
 
-                                    <h2 class="entry-title">2 Busca Empleo. <br>Conocenos!</h2>
+                                    <h2 class="entry-title">Busca Empleo. <br>Busca el mejor para ti!</h2>
                                 </div><!--- .entry-header -->
 
                                 <div class="entry-footer">
-                                    <a class="btn gradient-bg" href="#">Ingresar</a>
+                                    <a class="btn gradient-bg" href="{% url 'registro' %}">Registrate</a>
                                 </div><!-- .entry-footer" -->
                             </div><!-- .col -->
                         </div><!-- .container -->
@@ -112,7 +112,7 @@
                 </div><!-- .swiper-slide -->
             </div><!-- .swiper-wrapper -->
 
-            <div class="swiper-slide"  data-date="2020/05/01" style="background: url({% static 'images/principal3.jpg' %}) no-repeat">
+            <div class="swiper-slide"  data-date="2020/05/01" style="background: url({% static 'images/principal22.jpg' %}) no-repeat">
                 <div class="hero-content">
                     <div class="container">
                         <div class="row">
@@ -140,11 +140,11 @@
                                         </div>--><!-- .countdown-holder -->
                                     </div><!-- .countdown -->
 
-                                    <h2 class="entry-title">3 Conoce Empresas. <br>Y busca la ideal para ti!</h2>
+                                    <h2 class="entry-title">Conoce Empresas. <br>Y busca la ideal para ti!</h2>
                                 </div><!--- .entry-header -->
 
                                 <div class="entry-footer">
-                                    <a class="btn gradient-bg" href="#">Ingresar</a>
+                                    <a class="btn gradient-bg" href="{% url 'registro' %}">Registrate</a>
                                 </div><!-- .entry-footer" -->
                             </div><!-- .col -->
                         </div><!-- .container -->
@@ -189,7 +189,7 @@
                 </div>
 
                 <footer class="entry-footer">
-                    <a href="#">Ver Vacantes</a>
+                    <a href="{% url 'Eventos' %}">Ver Vacantes</a>
                 </footer>
             </div>
         </div>
@@ -206,14 +206,25 @@
                         <figure>
                             <a href=""><img src="{% static 'images/formulario.gif' %}" alt="1"></a>
                         </figure>
-                    </div>                 
+                    </div>  
+                    <header class="entry-header">
+                            <h2 class="entry-title">Buscas Trabajo? Estás en el sitio<br>
+                                indicado, consulta cada una de las <br>
+                                vacantes, informate, contacta las <br>
+                                emplesas y listo algún trabajo ya <br>
+                                podría ser tuyo. <br> 
+                                <br> 
+                                Quieres conocer más? <a href="{% url 'Eventos' %}">Aqui</a>  </h2>
+
+                            <div class="posted-date"></div>
+                        </header>               
                    <div class="event-content-wrap positioning-event-1">
                         <!-- <figure>
-                            <a href="https://www.bbva.mx/personas/faq/productos/pensiones/riesgo-de-trabajo/trabajo.html"><img src="{% static 'imagenes/bbva.png' %}" alt="1"></a>
+                            <a href="https://www.bbva.mx/personas/faq/productos/pensiones/riesgo-de-trabajo/trabajo.html"><img src="{% static 'images/formulario.gif' %}" alt="1"></a>
                         </figure> -->
                         
                         <!-- <header class="entry-header">
-                            <h3 class="entry-title"></h3>
+                            <h2 class="entry-title">hola</h2>
 
                             <div class="posted-date"></div>
                         </header> -->
@@ -221,71 +232,83 @@
 
                    <div class="event-content-wrap positioning-event-2">
                         <figure>
-                            <a href="https://mx.jobrapido.com/?r=auto&w=adecco&utm_source=adwords&utm_medium=cpc&utm_campaign=ADWORDS_MX_JOB_SEARCH&utm_agid=1845340901&utm_kwid=19643128181&gclid=CjwKCAiA6Y2QBhAtEiwAGHybPZm8nzmEbPlIPomrMv6yFhlJG7fZCzwCVVfCN1wHvT2mHU1f1fbfMBoCYT4QAvD_BwE"><img src="{% static 'imagenes/soli.jpeg' %}" alt=""></a>
+                            <a href="#"><img src="{% static 'images/programar.gif' %}" alt=""></a>
                         </figure>
-
-                        <header class="entry-header">
-                            <h3 class="entry-title">CREA TU CUENTA</h3>
-
-                            <div class="posted-date"></div>
-                        </header>
-                    </div>
-
-                    <div class="event-content-wrap positioning-event-3">
-                        <!-- <figure>
-                            <a href="https://www.banamex.com/bolsa-de-trabajo/index.html"><img src="{% static 'images/citi.png' %}" alt=""></a>
-                        </figure> -->
 
                         <!-- <header class="entry-header">
                             <h3 class="entry-title">CREA TU CUENTA</h3>
 
                             <div class="posted-date"></div>
                         </header> -->
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-3">
+                        <figure>
+                            <a href="https://www.banamex.com/bolsa-de-trabajo/index.html"><img src="{% static 'images/camara.gif' %}" alt=""></a>
+                        </figure>
+
+                        <!-- <header class="entry-header">
+                            <h3 class="entry-title">CREA TU CUENTA</h3>
+
+                            <div class="posted-date"></div>
+                        </header> -->
+                        
                     </div> 
 
-                     <div class="event-content-wrap positioning-event-4 half">
-                        <figure>
-                            <a href="#"><img src="{% static 'images/events-in-london.jpg' %}" alt=""></a>
-                        </figure>
+                     <div class="event-content-wrap positioning-event-4">
+                        <!-- <figure>
+                            <a href="#"><img src="{% static 'images/diseño.gif' %}" alt=""></a>
+                        </figure> -->
                     </div> 
 
                     <div class="event-content-wrap positioning-event-5 half">
-                        <figure>
-                            <a href="{% url 'inicio' %}"><img src="{% static 'images/imagen1.png' %}" alt=""></a>
-                        </figure>
-                    </div>-->
-
-                   <!-- <div class="event-content-wrap positioning-event-6 half">
-                        <figure>
-                            <a href="#"><img src="{% static 'images/summer-festivals.jpg' %}" alt=""></a>
-                        </figure>
+                        <!-- <figure>
+                            <a href="#"><img src="{% static 'images/diseño.gif' %}" alt=""></a>
+                        </figure> -->
+                        <header class="">
+                            <h2 class="entry-title">Empresas</h2>
+                                <a href="{% url 'Elementos' %}">Aqui</a>
+                            <div class="posted-date"></div>
+                        </header>
                     </div>
 
-                    <div class="event-content-wrap positioning-event-7">
-                        <figure>
-                            <a href="https://www.intel.la/content/www/xl/es/support/articles/000022528/programs.html"><img src="{% static 'images/intel.png' %}" alt=""></a>
-                        </figure>
-
-                        <header class="entry-header">
-                            <h3 class="entry-title">Intel</h3>
-
-                            <div class="posted-date">18 de julio de 1968</div>
+                   <div class="event-content-wrap positioning-event-6 half">
+                        <!-- <figure>
+                            <a href="#"><img src="{% static 'images/summer-festivals.jpg' %}" alt=""></a>
+                        </figure> -->
+                        <header class="">
+                            <h2 class="entry-title">Empleos </h2>
+                            <a href="{% url 'Eventos' %}">Aqui</a>
+                            <div class="posted-date"></div>
                         </header>
+                    </div>
+                    </div>
+
+                    <div class="event-content-wrap  positioning-event-6 positioning-event-7 half">
+                        <!-- <figure>
+                            <a href="#"><img src="{% static 'images/llamada.gif' %}" alt=""></a>
+                        </figure> -->
+
+                        <!-- <header class="">
+                            <h2 class="entry-title">Visita el apartado de empleo y encuenta el tuyo. </h2>
+
+                            <div class="posted-date"></div>
+                        </header> -->
                     </div>
 
                     <div class="event-content-wrap positioning-event-8">
-                        <figure>
-                            <a href="https://www.grupobimbo.com/es/bolsa-de-trabajo"><img src="{% static 'images/Bimbo.png' %}" alt="1"></a>
-                        </figure>
+                        <!-- <figure>
+                            <a href="#"><img src="{% static 'images/busca.jpg' %}" alt=""></a>
+                        </figure> -->
 
-                        <header class="entry-header">
-                            <h3 class="entry-title">Bimbo</h3>
+                        <!-- <header class="">
+                            <h2 class="entry-title">Cada día tenemos algúna nueva vacante para ti.</h2>
 
-                            <div class="posted-date">1943</div>
-                        </header>
+                            <div class="posted-date"></div>
+                        </header> -->
                     </div>
 
-                    <div class="event-content-wrap positioning-event-9">
+                    <!-- <div class="event-content-wrap positioning-event-9">
                         <figure>
                             <a href="https://www.cemexmexico.com/acerca-de-cemex/trabaja-con-nosotros"><img src="{% static 'images/cemex.png' %}" alt=""></a>
                         </figure>
@@ -295,7 +318,7 @@
 
                             <div class="posted-date">1906</div>
                         </header>
-                    </div>-->
+                    </div> -->
 
                    <!-- <div class="event-content-wrap positioning-event-10 half">
                         <figure>
@@ -307,7 +330,7 @@
                         <figure>
                             <a href="#"><img src="{% static 'images/autumn.jpg' %}" alt=""></a>
                         </figure>
-                    </div>-->
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -327,7 +350,7 @@
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="next-event-wrap">
                     <figure>
-                        <a href="#"><img src="{% static 'images/ventas.png' %}" alt="1"></a>
+                        <a href="{% url 'Eventos' %}"><img src="{% static 'images/ventas.png' %}" alt="1"></a>
 
                         <div class="event-rating">16,606</div>
                     </figure>
@@ -343,7 +366,7 @@
                     </div>
 
                     <footer class="entry-footer">
-                        <a href="#">Màs informaciòn</a>
+                        <a href="{% url 'Eventos' %}">Màs informaciòn</a>
                     </footer>
                 </div>
             </div>
@@ -367,7 +390,7 @@
                     </div>
 
                     <footer class="entry-footer">
-                        <a href="#">Màs Informaciòn</a>
+                        <a href="{% url 'Eventos' %}">Màs Informaciòn</a>
                     </footer>
                 </div>
             </div>
@@ -391,7 +414,7 @@
                     </div>
 
                     <footer class="entry-footer">
-                        <a href="#">Màs Informaciòn</a>
+                        <a href="{% url 'Eventos' %}">Màs Informaciòn</a>
                     </footer>
                 </div>
             </div>
@@ -408,7 +431,7 @@
 
                      <div class="select-location">
                         <select>
-                            <option>currículums</option>
+                            <option>Informaciòn</option>
                         </select>
                     </div>
                 </header>
@@ -564,7 +587,7 @@
                 <a href="https://www.televisa.com/"><img src="{% static 'images/televisa.png' %}" alt=""></a>
             </div>
 
-            <!---->  <div class="event-partner-logo">
+              <!-- <div class="event-partner-logo">
                 <a href="#"><img src="images/himalayas.png" alt=""></a>
             </div>
 
@@ -582,7 +605,7 @@
 
             <div class="event-partner-logo">
                 <a href="#"><img src="images/the-pirate.png" alt=""></a>
-            </div> --> 
+            </div>  -->
         </div>
     </div>
 
@@ -590,11 +613,6 @@
 </div>
 </div>
 </div>
-
-{{SeccionNotis}}
-
-
-
 
 <div class="homepage-info-section">
     <div class="container">

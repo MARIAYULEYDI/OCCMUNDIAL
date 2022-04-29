@@ -13,7 +13,7 @@
 
                 <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
                     <div class="buy-tickets">
-                        <a class="btn gradient-bg" href="/admin/">Admin</a>
+                        <a class="btn gradient-bg" href="/Registro/">Registrate</a>
                     </div><!-- .buy-tickets -->
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -101,9 +101,10 @@
             <div class="contact-form">
                 <form class="row" method="post">
                     {% csrf_token %}
-                    <div class="col-12 col-md-4"><input type="text" placeholder="Name" name="{{ form.nombre.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="email" placeholder="email" name="{{ form.email.name}}"></div>
-                    <div class="col-12 "><textarea placeholder="Comentario" rows="8" name="{{ form.comentarios.name}}"></textarea></div>
+                    <div class="col-12 col-md-4"><input type="text" placeholder="Name" name="{{ form.nombre.name}}" id="name" value=""></div>
+                    <div class="col-12 col-md-4"><input type="email" placeholder="email" name="{{ form.email.name}}" id="email" value=""></div>
+                    <div class="col-12 col-md-4"><input type="text" placeholder="website" name="{{ form.website.name}}" id="website" value=""></div>
+                    <div class="col-12 "><textarea placeholder="Comentario" rows="8" name="{{ form.comentarios.name}}" id="comentarios" value=""></textarea></div>
                     
                     <div class="col-12 flex justify-content-center"><input class="btn gradient-bg" type="Submit" value="Enviar"></div>
                 </form>
@@ -112,7 +113,25 @@
     </div>
 </div>
 
-<div class="newsletter-subscribe">
+<article class="events-news-post">
+    <header class="entry-header">
+        <div id="comments">
+          <h3>comments</h3>
+          <ul>
+            {% for comment in comments %}
+            <li>
+                <p> {{ comment.nombre }} </p>
+                <div class="comcont">
+                    <p> {{ comment.comentario }}</p>
+                  </div>
+            </li>
+            {% endfor %}
+        </ul>
+        </div>
+    </header>
+</article>
+
+<!-- <div class="newsletter-subscribe">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -139,6 +158,6 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 {% endblock %}

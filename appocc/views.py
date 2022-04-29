@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect 
-from.models import Noticias, Comentarios
+from.models import Noticias, Comentarios, solicitud
 from.forms import ComentariosForm, userForm, loginForm 
 from django.contrib import messages 
 from django.views import View
@@ -10,10 +10,10 @@ from django.contrib.auth.views import LoginView
 def index(request):
     return render(request, 'app/index.html')
 def events(request):
-    # soli = solicitud.objects.all()
-    # datos = {
-    #     "soli" : soli
-    #     }
+    soli = solicitud.objects.all()
+    datos = {
+        "soli" : soli
+        }
     return render(request, 'app/events.html')
 def elements(request):
     Notis = Noticias.objects.all()
@@ -23,8 +23,16 @@ def elements(request):
     return render(request, 'app/elements.html', datos)
 def events_news(request):
     return render(request, 'app/events_news.html')
+
+def destacadas(request):
+    return render(request, 'app/destacadas.html') 
+
+def lista_empresas(request):
+    return render(request, 'app/lista_empresas.html')  
+
 def single_event(request):
     return render(request, 'app/single_events.html')
+    
 def contact(request):
     datos =  {
         "form": ComentariosForm
@@ -37,8 +45,8 @@ def contact(request):
             datos["form"] = formulario
     return render(request, 'app/contact.html', datos)
 
-def registro(request):
-    return render(request, 'app/registro.html')
+# def registro(request):
+#     return render(request, 'app/registro.html')
 
 def buscar(request): 
     if request.GET ['busqueda']:
@@ -48,14 +56,15 @@ def buscar(request):
             "Noticias" : Noticias,
             "query": query
         }
-        return render(request, 'app/registro_b.html', datos)
+        
+        return render(request, 'app/buscar.html', datos)
     else:
-        return render (request, 'app/registro_b.html')
+        return render (request, 'app/index.html')
 
 class Registro(View):
     form_class = userForm
-    initial = {'key': 'values'}
-    template_name = ''
+    initial = {'key': 'value'}
+    template_name = 'app/registro.html'
 
     def get(self, request, *args, **kwargs):
         form = self.form_class(initial=self.initial)
@@ -66,7 +75,7 @@ class Registro(View):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request,f'Account created for {username}')
+            messages.success(request, f'Account created for {username}')
             return redirect(to='/')
         return render(request, self.template_name, {'form': form})
     def dispatch(self, request, *args, **kwargs):
@@ -80,5 +89,5 @@ class CustomLoginView(LoginView):
         remember_me = form.cleaned_data.get('remember_me')
         if not remember_me:
             self.request.session.set_expiry(0)
-            self.request.sessio.modified = True
+            self.request.session.modified = True
         return super(CustomLoginView, self).form_valid(form)        

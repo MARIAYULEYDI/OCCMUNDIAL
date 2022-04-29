@@ -6,14 +6,14 @@ from .models import Comentarios
 class ComentariosForm(forms.ModelForm):
     class Meta:
         model = Comentarios
-        fields = ["nombre", "email", "comentarios"]
+        fields = ["nombre", "email", "website", "comentarios"]
         #fields = '__all__'
 
 #creación de formularios.
 class userForm(UserCreationForm):
     class Meta:
         model = User
-        fields = ['first_name', 'last_name', 'username', 'email', 'password1', 'password2']
+        fields = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2']
 
 class loginForm(AuthenticationForm):
     class Meta:

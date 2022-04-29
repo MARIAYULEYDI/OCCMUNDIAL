@@ -1,0 +1,248 @@
+{% extends "app/base.html" %}
+{% load static %} 
+
+{% block titulo %} 
+EMPRESAS
+ {% endblock %}
+ 
+{% block contenido %}
+
+
+                <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+                    <div class="buy-tickets">
+                        <!-- <a class="btn gradient-bg" href="{% url 'login' %}">Login</a>
+                        <a class="btn gradient-bg" href="{% url 'registro' %}">Registro</a> -->
+                    </div><!-- .buy-tickets -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .header-bar -->
+
+    <div class="page-header elements-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header class="entry-header">
+                        <h1 class="entry-title">LISTA DE EMPRESAS</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- .site-header -->
+
+<div class="container">
+    <div class="row elements-wrap">
+        <div class="col-12">
+           <!-- <header class="entry-header elements-heading">
+                <h2 class="entry-title">Buttons</h2>
+            </header> -->
+
+            <div class="entry-content elements-container">
+                <!-- <a href="#" class="btn gradient-bg">Lista de empresas</a> -->
+                <!-- <a href="#" class="btn gradient"></a>
+                <a href="#" class="btn dark">Buy Tikets</a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row elements-wrap">
+        <div class="col-12">
+            <header class="entry-header elements-heading">
+                <h1 class="entry-title">Lista de empresa de México</h1>
+            </header>
+
+            <div class="entry-content elements-container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+
+                        <div class="entry-content">
+                            <p> 
+                                <ul>
+                                    <li>FEMSA</li>
+                                    <li>Soriana</li>
+                                    <li>Bimbo</li>
+                                    <li>America Móvil</li>
+                                    <li>Walmart</li>
+                                </ul>  
+                            </p>
+                            <p>Estas son las empresas que aportan más empleo en México</p>
+                        </div>
+                        <!-- <div class="accordion-wrap type-accordion">
+                            <h3 class="entry-title flex justify-content-between align-items-center active">Grupo Modelo<span class="arrow-r"></span></h3>
+                           
+                            <div class="entry-content">
+                                <div class="col-12 col-md-4 col-lg-5">
+                                    <figure>
+                                        <img src="{% static 'images/modelo.png' %}" alt="logo">
+                                    </figure>
+                                </div>
+                                <p>Grupo Modelo S.A. de C.V. es una cervecería mexicana que se especializa en exportar cerveza a la mayoría de los países del mundo, fundada en la Ciudad de México en 1925. Sus marcas de exportación incluyen Corona, Modelo y Pacífico.</p>
+                            </div> -->
+
+                            <!-- <h3 class="entry-title flex justify-content-between align-items-center">Bimbo<span class="arrow-r"></span></h3>
+
+                            <div class="entry-content">
+                                <div class="col-12 col-md-4 col-lg-5">
+                                    <figure>
+                                        <img src="{% static 'imagenes/pensante.png' %}" alt="logo">
+                                    </figure>
+                                </div>
+                                <p>Grupo Bimbo fabrica más de 13,000 productos y tiene una de las redes de distribución más grandes del mundo, con más de 2.8 millones de puntos de venta, alrededor de 53,000 rutas y somos más de 133,000 colaboradores. 
+                                </p>
+                            </div>
+
+                            <h3 class="entry-title flex justify-content-between align-items-center">Intel<span class="arrow-r"></span></h3>
+
+                            <div class="entry-content">
+                                <p>Intel fue fundada en Mountain View, California, el ya lejano día 18 de julio del año 1968, por Robert Noyce y Gordon Moore, los pioneros de los semiconductores, y ampliamente asociada con el liderazgo ejecutivo y la visión de Andrew Grove.</p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- <article class="events-news-post">
+                        <header class="entry-header">
+                            <h2 class="entry-title"><a href="#">Empresas</a></h2>
+        
+                            <div class="entry-meta flex align-items-center"> -->
+                                <!--<div class="posted-author"><a href="#">by James Williams</a></div>
+        
+                                <div class="post-comments"><a href="#">2 Comments</a></div>-->
+                            <!-- </div>
+                        </header> -->
+        
+                        <!-- <figure>
+                            <center>
+                            <a href="#"><img src="{% static 'images/10.png' %}" alt=""></a>
+                        </center>
+                            <div class="posted-date"><span>Feb</span><span>11</span><span>‘18</span></div>
+                        </figure> -->
+        
+                        <!-- <div class="entry-content">
+                            <h3 class="entry-title"> Grupo Bimbo</h3>
+                            <p>En Grupo Bimbo buscamos gente con sentido humano que aporte su talento e ideas para mejorar su entorno laboral y personal, dejando huella en lo que más le apasiona: Alimentar un mundo mejor.
+                                Nosotros, los colaboradores, somo los que hacemos de esta una empresa innovadora y abierta a nuevas formas de pensar. Somos motor para seguir creciendo y ser los mejores. Y para que eso suceda, buscamos el cómo sí; impulsamos nuestro potencial y creamos el espacio y las oportunidades para que desarrollemos nuestro talento.
+                            </p>
+                        <center> <a href="https://www.grupobimbo.com/">información aqui</a></center>   
+                        </div>
+                        <div class="entry-content">
+                            <h3 class="entry-title"> Grupo Aurrera</h3>
+                            <p>Bodega Aurrera es una empresa minorista de descuento en México. En sus tiendas vende productos cómo alimentos, ropa y otra mercancía. La empresa es una subsidiaria de Walmart. Tiene su sede en la Ciudad de México. La empresa tiene varios formatos de su tienda, usando formatos diferentes dependiendo en la población en la cual esta ubicada.
+                            </p>
+                        <center> <a href="https://mx.jobrapido.com/?r=auto&w=bodega+aurrera&utm_source=adwords&utm_medium=cpc&utm_campaign=ADWORDS_MX_JOB_SEARCH_EXACT&utm_agid=6033717341&utm_kwid=29342048511&gclid=CjwKCAjwx46TBhBhEiwArA_DjNvmF2L1Kysh6yTCiaBPQpleZrnEvM7YFayaCSZC1SkINeNN82uysBoCwJQQAvD_BwE">información aqui</a></center>   
+                        </div>
+                        <div class="entry-content">
+                            <h3 class="entry-title"> Grupo Marmolesnatura</h3>
+                            <p>Somos una empresa comprometida con nuestros colaboradores, dedicada a formar líderes en base al respeto, bienestar y desarrollo profesional, generando una adaptación continua de cada uno de los miembros de Mármoles Natura, promoviendo el crecimiento laboral como uno de nuestros objetivos principales ya que estamos convencidos de que el capital humano es el motor que impulsa el crecimiento de nuestra compañía.
+                                Mármoles Natura se identifica por la oportunidad de crecimiento para sus empleados y la constante innovación es por eso que proporcionamos la oportunidad de empleo a jóvenes estudiantes y recién egresados que tengan la visión de participar en diversos proyectos de crecimiento en conjunto con la empresa.
+                                Consideramos a nuestros colaboradores como el factor más importante para alcanzar el éxito; ya que es precisamente el capital humano el que tiene las habilidades y conocimientos necesarios para manejar el cambio continúo que marcan los ciclos y retos de la vida organizacional
+                            </p>
+                        <center> <a href="https://www.google.com/search?q=empresa+marmolnatura+vacantes&rlz=1C1UEAD_esMX989MX989&sxsrf=APq-WBsPmzElGTbAob7veQxhdspuT9OKrg:1650761069705&ei=bZ1kYoCtKomZkPIPtcuimAY&uact=5&oq=empresa+marmolnatura+vacantes&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsAM6BwghEAoQoAE6BQghEKABOgQIIRAVOgYIABAWEB46BQgAEIAESgQIQRgASgQIRhgAUI8GWIQ_YNJAaANwAXgAgAHQAYgBhh2SAQYwLjIxLjGYAQCgAQHIAQjAAQE&sclient=gws-wiz&ibp=htl;jobs&sa=X&ved=2ahUKEwiTqoyivKv3AhXMKkQIHWFiDecQutcGKAB6BAgCEAQ#htivrt=jobs&htidocid=Ol0sUZ9GxVgAAAAAAAAAAA%3D%3D&fpstate=tldetail">información aqui</a></center>   
+                        </div>
+                    </article>
+                    <figure> -->
+                        <!-- <center>
+                        <a href="#"><img src="{% static 'images/empresas.jpg' %}" alt=""></a>
+                    </center> -->
+                       <!-- <div class="posted-date"><span>Feb</span><span>11</span><span>‘18</span></div>-->
+                    <!-- </figure> -->
+
+                    <!-- <div class="col-12 col-md-6"> -->
+                        <!-- <div class="tabs">
+                            <ul class="tabs-nav flex">
+                                <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_details">Empleos Grupo Modelo</li>
+                                <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_venue">Plantas de Grupo Modelo en México</li>
+                                <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_organizers">Ambiente laboral</li>
+                            </ul>
+
+                            <div class="tabs-container">
+                                <div id="tab_details" class="tab-content">
+                                    <p><ol>
+                                        <li>Chofer Repartidor - Morelia</li>
+                                        <li>Jefe de Alamcenes - Celaya</li>
+                                        <li>Gerente de Precio - Acapulco de Juárez</li>
+                                        <li>Especialista de Método- Aguascalientes</li>
+                                        <li>Agente ventas - Manzanillo</li>
+                                    </ol></p>
+                                </div>
+
+                                <div id="tab_venue" class="tab-content">
+                                    <p> Se operan 11 plantas cerveceras en México, incluyendo ocho plantas industriales, dos artesanales y una experimental, además de 10 plantas de operaciones verticales (vidrieras, malterías, botes y plastitapas). </p>
+                                </div>
+
+                                <div id="tab_organizers" class="tab-content">
+                                    <p>El compromiso y la disciplina son clave para impulsar una empresa como Grupo Modelo México, que es dirigida por Cassiano De Stefano desde enero de 2018. Para el presidente de la firma cervecera, la clave para destacar es la pasión con la que se desempeñe el trabajo, así como la atención a sus colaboradores para construir un ambiente laboral óptimo.</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row elements-wrap">
+        <!-- <div class="col-12">
+            <header class="entry-header elements-heading">
+                <h1 class="entry-title">Colaboradores Empresas</h1>
+            </header>
+
+            <div class="entry-content elements-container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="circular-progress-bar">
+                            <div class="circle" id="festivals">
+                                <strong></strong>
+                            </div>
+
+                            <h3 class="entry-title"> Citibanamex</h3>
+                            <p>Colaboradores: 36 mil 108</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="circular-progress-bar">
+                            <div class="circle" id="concerts">
+                                <strong></strong>
+                            </div>
+
+                            <h3 class="entry-title"> Walmart </h3>
+                            <p>Colaboradores: 193 mil 567 </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="circular-progress-bar">
+                            <div class="circle" id="conference">
+                                <strong></strong>
+                            </div>
+
+                            <h3 class="entry-title">BBVA. Servicios Financieros</h3>
+                            <p>Colaboradores: 37 mil 65</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="circular-progress-bar">
+                            <div class="circle" id="new_artists">
+                                <strong></strong>
+                            </div>
+
+                            <h3 class="entry-title">Scotiabank. Banca</h3>
+                            <p>Colaboradores: 5cinco mil 927</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    
+    
+       
+
+    
+</div>
+
+<div style="height: 120px"></div>
+
+{% endblock %}

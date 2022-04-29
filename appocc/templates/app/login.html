@@ -13,7 +13,7 @@
 
                 <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
                     <div class="buy-tickets">
-                        <a class="btn gradient-bg" href="/admin">Admin</a>
+                    
                     </div><!-- .buy-tickets -->
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -118,7 +118,7 @@
     </div>
 </div>  -->
 
-<div class="newsletter-subscribe">
+<div class="">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -127,17 +127,42 @@
                     <p>Únete a nuestra Base de Datos Ya!</p>
                 </header> -->
 
-                <div class="newsletter-form">
-                    <form class="flex flex-wrap justify-content-center align-items-center">
+                <div class="">
+                    <form class="flex flex-wrap justify-content-center align-items-center" method="POST">
+                        {% csrf_token %}
+                        {% if form.errors %}
+                    <div class="alert alert-danger alert-dismissible" role="alert">
+                        <div id="form_errors">
+                            {% for key, value in form.errors.items %}
+                            <strong>{{ value }}</strong>
+                            {% endfor %}
+                        </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span arial-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    {% endif %}
                         <div class="col-md-12 col-lg-6">
-                            <input type="email" placeholder="Your e-mail">
+                            <!-- <input type="text" placeholder="Your e-mail"> -->
+                            <label for="username">Username</label>
+                            {{ form.username }}
                         </div>
-                        <div class="col-md-12 col-lg-3">
-                            <input type="text" placeholder="Password">
+                        <div class="col-md-12 col-lg-6">
+                            <!-- <input type="text" placeholder="Password"> -->
+                            <label for="password">Password</label>
+                            {{ form.password }}
+                        </div>  <br>
+                        <!-- <div class="col-md-12 col-lg-3">
+                             <input type="text" placeholder="Password">
+                            <label for="remember_me">Remember me</label>
+                            {{ form.remember_me }}
+                        </div> -->
+                        <div class="">
+                            <input class="btn gradient-bg" type="submit" value="Login">
+                            <input class="btn gradient-bg" type="reset" value="Reset From">
                         </div>
-
-                        <div class="col-md-12 col-lg-3">
-                            <input class="btn gradient-bg" type="submit" value="Suscríbete">
+                        <div class="col-12 flex justify-content-center">
+                            <p>No tienes cuenta?   Registrate <a href="{% url 'registro' %}">Aqui</a> </p>
                         </div>
                     </form>
                 </div>
